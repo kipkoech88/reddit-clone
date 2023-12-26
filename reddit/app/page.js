@@ -19,7 +19,9 @@ export default function Home() {
           <div>
             <Image src={Logo} width={150} height={150}/>
           </div>
-          <div className='conatiner flex justify-between  border-red-500 w-2/3 border py-2 h-10 items-center'>
+          <div className='w-2/3'>
+            <button className='w-full hover:border border-gray-500 rounded-sm'>
+            <div className='flex justify-between   w-full border py-2 h-10 items-center'>
             <div className='flex space-x-4 mr-6'>
               {/* <Image src={home} alt='Reddit' width={20}/> */}
               <div className='py-2 order-1'>Home</div>
@@ -28,35 +30,52 @@ export default function Home() {
                 <div className='py-2'>Arr</div>
             </div>
           </div>
+            </button>
+          </div>
         </div>
         <div className='flex w-1/3 my-2'>
-            <input type='text' className='w-full peer rounded-full py-2 px-4 border border-gray text-sm' placeholder='search Reddit'></input>
+            <input type='text' className='w-full peer rounded-full py-2 px-4 border border-gray text-sm hover:border-blue-500' placeholder='Search Reddit'></input>
         </div>
-        <div className='flex w-1/3 justify-between space-x-4 my-5 border border-red-500'>
+        <div className='flex w-1/3 justify-between space-x-4 my-5  items-centre'>
           <div className='flex justify-between w-1/2'>
             <div>
             </div>
             <div>
-              <Image src={trending} alt='trending on reddit' width={25} height={10}/>
+              <Image src={trending} alt='trending on reddit' width={25} height={10} className='transition cursor-pointer ease-in-out duration-300 hover:bg-gray-500 h-7 w-7' />
             </div>
             <div>
-              <Image src={banana} width={25} height={10} alt='messages'/>
+              <Image src={banana} width={25} height={10} alt='messages' className='transition cursor-pointer ease-in-out duration-300 hover:bg-gray-500 h-7 w-7'/>
             </div>
             <div>
-              <Image src={messenger} alt='' width={25} height={10}/>
+              <Image src={messenger} alt='' width={25} height={10} className='transition cursor-pointer ease-in-out duration-300 hover:bg-gray-500 h-7 w-7'/>
             </div>
             <div>
-              <Image src={notification} alt='notification' width={25} height={10}/>
+              <Image src={notification} alt='notification' width={25} height={10} className='transition cursor-pointer ease-in-out duration-300 hover:bg-gray-500 h-7 w-7'/>
             </div>
             <div>
-              <Image src={plus} width={25} height={10} alt='add post'/>
+              <Image src={plus} width={25} height={10} alt='add post' className='transition cursor-pointer ease-in-out duration-300 hover:bg-gray-500 h-7 w-7'/>
             </div>
             <div>
-              <Image src={advertising} width={25} height={10} alt='advertize'/>
+              <Image src={advertising} width={25} height={10} alt='advertize' className='transition cursor-pointer ease-in-out duration-300 hover:bg-gray-500 h-7 w-7'/>
             </div>
           </div>
-          <div className='w-1/2 border border-gray-500'>
-            Academia wing
+          <div className='w-1/2 border border-gray-450 relative group'>
+            <button>
+              <div className='flex justify-between spce-x-8'>
+                <div className='w-2/3 flex space-x-2 mr-6'>
+                  <div className='w-1/3'>
+                    Img
+                  </div>
+                  <div>
+                    <h4 className='text-xs'>Academia_wing</h4>
+                    <h6 className='text-xs'>1 karma</h6>
+                  </div>
+                </div>
+                <div className=''>
+                  arr
+                </div>
+              </div>
+            </button>
           </div>
         </div>
       </nav>
