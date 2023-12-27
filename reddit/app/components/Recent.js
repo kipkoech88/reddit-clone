@@ -15,9 +15,9 @@ function Recent() {
         <div>
             <h2>{char1}Hiring{char2} $15/HR - Looking for experienced VA to complete</h2>
             <ul className='flex space-x-2 text-gray-500'>
-                <li>19 points</li>
-                <li>21 comments</li>
-                <li>10 hours</li>
+                <li className='text-[10px]'>19 points</li>
+                <li className='text-[10px]'>21 comments</li>
+                <li className='text-[10px]'>10 hours</li>
             </ul>
         </div>
       </div>

@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Header from './components/Header'
 import Logo from './reddit-1.svg'
-import home from '../public/home-icon-silhouette-svgrepo-com.svg'
 import messenger from '../public/messenger.png'
 import banana from '../public/banana.png'
 import advertising from '../public/advertising.png'
@@ -14,11 +12,13 @@ import profile from '../public/user-profile-svgrepo-com.svg'
 import Footer from './components/Footer'
 import Recent from './components/Recent'
 import Premium from './components/Premium'
+import home from '../public/home-icon-silhouette-svgrepo-com.svg'
+import Communities from './components/Communities'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
-      <header className='w-full px-2 py-2 bg-white'>
+    <main className="flex flex-col h-screen">
+       <header className='w-full px-2 py-2 bg-white'>
       <nav className='container flex w-full justify-between space-x-4 items-center'>
         <div className='flex flex w-1/3 justify-between space-x-2'>
           <div>
@@ -87,9 +87,14 @@ export default function Home() {
         </div>
       </nav>
       </header>
-      <Premium/>
-      <Recent/>
-      <Footer/>
+      <div className='flex-1 overflow-y-auto m-4'>
+        <div className='flex flex-col space-y-5'>
+          <Premium/>
+          <Communities/>
+          <Recent/>
+          <Footer/>
+        </div>
+      </div>
     </main>
   )
 }
