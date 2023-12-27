@@ -11,11 +11,13 @@ import trending from '../public/trending.png'
 import notification from '../public/bell.png'
 import down from '../public/down-arrow-svgrepo-com.svg'
 import profile from '../public/user-profile-svgrepo-com.svg'
+import Footer from './components/Footer'
+import Recent from './components/Recent'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
-      <header className='w-full px-2 py-2'>
+      <header className='w-full px-2 py-2 bg-white'>
       <nav className='container flex w-full justify-between space-x-4 items-center'>
         <div className='flex flex w-1/3 justify-between space-x-2'>
           <div>
@@ -84,6 +86,8 @@ export default function Home() {
         </div>
       </nav>
       </header>
+      <Recent/>
+      <Footer/>
     </main>
   )
 }
