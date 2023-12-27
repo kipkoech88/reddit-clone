@@ -13,6 +13,7 @@ import down from '../public/down-arrow-svgrepo-com.svg'
 import profile from '../public/user-profile-svgrepo-com.svg'
 import Footer from './components/Footer'
 import Recent from './components/Recent'
+import Premium from './components/Premium'
 
 export default function Home() {
   return (
@@ -86,6 +87,7 @@ export default function Home() {
         </div>
       </nav>
       </header>
+      <Premium/>
       <Recent/>
       <Footer/>
     </main>
