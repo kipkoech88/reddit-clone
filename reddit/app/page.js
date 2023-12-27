@@ -36,7 +36,7 @@ export default function Home() {
               </div>
               <div>
                   <div className='py-2 px-2'>
-                    <Image src={down} width={20}/>
+                    <Image src={down} className='w-4'/>
                   </div>
               </div>
             </div>
@@ -71,18 +71,18 @@ export default function Home() {
             </div>
             <div className='w-1/2 border border-gray-450 relative group'>
               <button>
-                <div className='flex justify-between spce-x-8'>
+                <div className='flex justify-between spce-x-8 items-center'>
                   <div className='w-2/3 flex space-x-2 mr-6'>
-                    <div className='w-1/3'>
+                    <div className='w-1/3 p-1'>
                       <Image src={profile} width={70}/>
                     </div>
-                    <div>
+                    <div className='flex-col space-y-1'>
                       <h4 className='text-xs'>Academia_wing</h4>
-                      <h6 className='text-xs'>1 karma</h6>
+                      <h6 className='text-xs text-gray-500 -pr-1'>1 karma</h6>
                     </div>
                   </div>
-                  <div className='px-2'>
-                    <Image src={down} width={20} className='py-2'/>
+                  <div className='px-2 items-center'>
+                    <Image src={down}  className='py-2 w-4'/>
                   </div>
                 </div>
               </button>

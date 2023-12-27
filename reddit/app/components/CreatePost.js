@@ -15,9 +15,9 @@ function CreatePost() {
           <div className='w-3/4'>
             <input type='text' placeholder='Create Post' className='w-full p-2 border border-gray-300 hover:border-blue-400'/>
           </div>
-          <div className='flex items-center'>
-            <Image src={pic} className='h-12 w-12'/>
-            <Image src={attach} className='h-12 w-12'/>
+          <div className='flex items-center px-2 space-x-1'>
+            <Image src={pic} className='h-8 w-8'/>
+            <Image src={attach} className='h-8 w-8'/>
           </div>
         </div>
         </button>
