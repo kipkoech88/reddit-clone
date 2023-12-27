@@ -89,16 +89,20 @@ export default function Home() {
         </nav>
       </header>
       
-      <div className='border border-red-500 overflow-y-auto m-4'>
-          <div className='flex flex-col space-y-5 order-1'>
-            <Premium/>
-            <Communities/>
-            <Recent/>
-            <Footer/>
-          </div>
-          <div className='flex-col flex w-1/3'>
+      <div className='border mx-12 flex justify-between border-red-500 m-4 overflow-y-auto space-x-3'>
+          <div className='flex-none w-1/4 border border-red-500'></div>
+          <div className='flex-initial w-1/2'>
             <CreatePost/>
           </div>
+          <div className=' flex-initial border flex border-red-500 w-1/4'>
+            <div className='flex-1 space-y-3 overflow-y-auto no-scrollbar'>
+              <Premium/>
+              <Communities/>
+              <Recent/>
+              <Footer/>
+            </div>
+          </div>
+          
       </div>
     </main>
   )

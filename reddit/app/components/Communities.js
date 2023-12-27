@@ -5,7 +5,7 @@ import alien from '../../public/alien-4-svgrepo-com.svg'
 
 function Communities() {
   return (
-    <div className='container w-1/5 bg-white p-4'>
+    <div className='container w-full bg-white p-4'>
       <div>
         <Image src={space} className='w-full h-[25px]'/>
       </div>

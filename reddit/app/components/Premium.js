@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function Premium() {
   return (
-    <div className='container w-1/5 text-xs bg-white p-4'>
+    <div className='container w-full text-xs bg-white p-4'>
       <div className='flex space-x-2 items-center'>
         <div>
             <Image src={premium} width={50} className='pb-2'/>

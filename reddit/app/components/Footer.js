@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='container w-1/5 text-xs h-1/3 bg-white p-3 mb-2'>
+    <div className='container w-full text-xs h-1/3 bg-white p-3 mb-2'>
       <div className='flex space-x-20'>
         <ul className='flex-col space-y-2'>
             <li className='cursor-pointer'>User Agreement</li>

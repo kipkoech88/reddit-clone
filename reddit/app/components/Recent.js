@@ -6,7 +6,7 @@ function Recent() {
     const char1 = '['
     const char2 = ']'
   return (
-    <div className='container flex-col space-y-2 w-1/5 text-xs bg-white p-4'>
+    <div className='container flex-col space-y-2 w-full text-xs bg-white p-4'>
       <h3 className='font-bold'>Recent posts</h3>
       <div className='flex space-x-1'>
         <div>
