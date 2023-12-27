@@ -15,6 +15,8 @@ import Premium from './components/Premium'
 import home from '../public/home-icon-silhouette-svgrepo-com.svg'
 import Communities from './components/Communities'
 import CreatePost from './components/CreatePost'
+import Hot from './components/Hot'
+import Post from './components/Post'
 
 export default function Home() {
   return (
@@ -89,12 +91,14 @@ export default function Home() {
         </nav>
       </header>
       
-      <div className='border mx-12 flex justify-between border-red-500 m-4 overflow-y-auto space-x-3'>
-          <div className='flex-none w-1/4 border border-red-500'></div>
+      <div className='mx-12 flex justify-between  m-4 overflow-y-auto space-x-3'>
+          <div className='flex-none w-1/4'></div>
           <div className='flex-initial w-1/2'>
             <CreatePost/>
+            <Hot/>
+            <Post/>
           </div>
-          <div className=' flex-initial border flex border-red-500 w-1/4'>
+          <div className=' flex-initial flex w-1/4'>
             <div className='flex-1 space-y-3 overflow-y-auto no-scrollbar'>
               <Premium/>
               <Communities/>
