@@ -125,8 +125,8 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      {isDropDown && <HomeDropDown/>}
-      {isProfileDropDown && <ProfileDropDown/>}
+      {isDropDown && <HomeDropDown ref={dropDownRef} />}
+      {isProfileDropDown && <ProfileDropDown ref={dropDownRef}/>}
       <div className='mx-12 flex justify-between  m-4 overflow-y-auto space-x-3'>
           <div className='flex-none w-1/4'></div>
           <div className='flex-initial w-1/2'>

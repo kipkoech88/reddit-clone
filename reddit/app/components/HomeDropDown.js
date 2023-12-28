@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { forwardRef } from 'react';
 
-function HomeDropDown() {
+const HomeDropDown =forwardRef((props, ref) => {
   return (
-    <div className='w-[265px] h-64 ml-40 absolute mt-12 bg-white  border-2 border-red-500'>
-        
+    <div ref={ref} className='w-[265px] h-64 ml-40 absolute mt-12 bg-white  border-2 border-red-500'>
+      
     </div>
-  )
-}
+  );
+})
 
-export default HomeDropDown
+export default HomeDropDown;
