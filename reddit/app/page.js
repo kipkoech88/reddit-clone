@@ -28,6 +28,7 @@ export default function Home() {
   const [isProfileDropDown, setIsprofileDropDown] = useState(false)
 
   const dropDownRef = useRef(null)
+  const profileRef = useRef(null)
 
   
   
@@ -40,10 +41,23 @@ export default function Home() {
 
   const closeDropDown = (event)=>{
     if(dropDownRef.current && !dropDownRef.current.contains(event.target)){
-      setDropdown(false);
+      setDropdown(false)
+    }
+  }
+
+  const closeProfileDropDown = (event)=>{
+    if(profileRef.current && !profileRef.current.contains(event.target)){
       setIsprofileDropDown(false)
     }
   }
+
+  useEffect(()=>{
+    document.addEventListener('click', closeProfileDropDown);
+
+    return ()=>{
+      document.removeEventListener('click', closeProfileDropDown)
+    }
+  })
 
   useEffect(()=>{
     document.addEventListener('click', closeDropDown);
@@ -126,7 +140,7 @@ export default function Home() {
         </nav>
       </header>
       {isDropDown && <HomeDropDown ref={dropDownRef} />}
-      {isProfileDropDown && <ProfileDropDown ref={dropDownRef}/>}
+      {isProfileDropDown && <ProfileDropDown ref={profileRef}/>}
       <div className='mx-12 flex justify-between  m-4 overflow-y-auto space-x-3'>
           <div className='flex-none w-1/4'></div>
           <div className='flex-initial w-1/2'>
