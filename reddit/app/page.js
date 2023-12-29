@@ -92,7 +92,7 @@ export default function Home() {
               
             </div>
           </div>
-          <div className='flex w-1/3 my-2'>
+          <div className='flex md:w-1/3 my-2'>
               <input type='text' className='w-full peer rounded-full py-2 px-4 border border-gray text-sm hover:border-blue-500 focus:outline-none' placeholder='Search Reddit'></input>
           </div>
           <div className='flex w-1/3 justify-between space-x-4   items-centre'>
@@ -118,7 +118,7 @@ export default function Home() {
                 <Image src={advertising} width={25} height={10} alt='advertize' className='transition cursor-pointer ease-in-out duration-300 hover:bg-gray-500 h-7 w-7'/>
               </div>
             </div>
-            <div className='w-1/2 border border-gray-450 relative group'>
+            <div className='w-1/2 border border-gray-450 relative group xs:hidden'>
               <button onClick={toggleProfileDropdown}>
                 <div className='flex justify-between spce-x-8 items-center'>
                   <div className='w-2/3 flex space-x-2 mr-6'>

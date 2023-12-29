@@ -5,7 +5,7 @@ import eyes from '../../public/eye-closed-svgrepo-com.svg'
 
 const ProfileDropDown = forwardRef((props, ref)=> {
   return (
-    <div ref={ref} className='w-[250px] min-h-64 ml-[1089px] absolute mt-[35px] bg-white overflow-y-auto max-h-[500px]'>
+    <div ref={ref} className='w-[250px] min-h-64 ml-[1039px] absolute mt-[80px] bg-white overflow-y-auto max-h-[500px]'>
         <div className='m-2 flex items-center space-x-1'> 
           <Image src={profile} className='w-5'/>
           <p className='text-xs text-gray-400'>My Stuff</p>
@@ -47,4 +47,6 @@ const ProfileDropDown = forwardRef((props, ref)=> {
     </div>
   )
 })
+
+ProfileDropDown.displayName = 'ProfileDropDown'
 export default ProfileDropDown

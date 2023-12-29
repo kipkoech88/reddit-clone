@@ -6,7 +6,7 @@ import star from '../../public/star-sharp-svgrepo-com.svg'
 
 const HomeDropDown =forwardRef((props, ref) => {
   return (
-    <div ref={ref} className='w-[265px] min-h-64 ml-40 absolute mt-12 bg-white  shadow p-1'>
+    <div ref={ref} className='w-[265px] min-h-64 ml-40 absolute mt-[80px] bg-white  shadow p-1'>
       <input type='text' className='border border-gray-300 m-2 focus:outline-none focus:border-blue-500 w-[240px] h-7 block p-1' placeholder='Filter'/>
       <p className='text-xs p-2 text-gray-400'>YOUR COMMUNITIES</p>
       <div>
@@ -29,5 +29,7 @@ const HomeDropDown =forwardRef((props, ref) => {
     </div>
   );
 })
+
+HomeDropDown.displayName = 'HomeDropDown'
 
 export default HomeDropDown;
